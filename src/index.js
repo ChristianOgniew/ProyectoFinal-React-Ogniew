@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { getProducts } from "./asyncMock";
+import { products } from "./asyncMock";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -29,7 +29,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-getProducts.forEach((product) => {
+products.forEach((product) => {
   addDoc(collection(db, "products"), product)
     .then((docRef) => {
       console.log("documento agregado con id", docRef.id);
