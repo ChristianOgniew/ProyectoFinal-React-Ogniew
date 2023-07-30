@@ -13,11 +13,7 @@ const CartWidget = () => {
       className="CartWidget"
       style={{ display: totalQuantity > 0 ? "block" : "none" }}
     >
-      <img
-        className="CartImg cart-icon white-cart-icon p-1"
-        src={cart}
-        alt="cart-widget"
-      />
+      <img className="CartImg" src={cart} alt="cart-widget" />
     </Link>
   );
 };

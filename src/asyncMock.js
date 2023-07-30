@@ -1,10 +1,10 @@
 const products = [
   {
     id: "1",
-    name: "Remera burberry",
+    name: "Remera Burberry",
     price: 9000,
     category: "Remera",
-    img: "../images/BurBerryRemera.png",
+    img: "../images/BurberryRemera.png",
     stock: 25,
     description: "Remera Burberry color Negro de L a XXL",
   },
